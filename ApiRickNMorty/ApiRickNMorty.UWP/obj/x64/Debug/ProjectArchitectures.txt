@@ -1,0 +1,1 @@
+C:\Users\Kevin\source\repos\ApiRickNMorty\ApiRickNMorty\ApiRickNMorty.UWP\ApiRickNMorty.UWP.csproj;x64

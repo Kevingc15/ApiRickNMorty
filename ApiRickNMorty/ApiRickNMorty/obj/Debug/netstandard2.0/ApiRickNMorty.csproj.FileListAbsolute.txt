@@ -1,0 +1,13 @@
+C:\Users\Kevin\source\repos\ApiRickNMorty\ApiRickNMorty\ApiRickNMorty\bin\Debug\netstandard2.0\ApiRickNMorty.deps.json
+C:\Users\Kevin\source\repos\ApiRickNMorty\ApiRickNMorty\ApiRickNMorty\bin\Debug\netstandard2.0\ApiRickNMorty.dll
+C:\Users\Kevin\source\repos\ApiRickNMorty\ApiRickNMorty\ApiRickNMorty\bin\Debug\netstandard2.0\ApiRickNMorty.pdb
+C:\Users\Kevin\source\repos\ApiRickNMorty\ApiRickNMorty\ApiRickNMorty\obj\Debug\netstandard2.0\ApiRickNMorty.csproj.AssemblyReference.cache
+C:\Users\Kevin\source\repos\ApiRickNMorty\ApiRickNMorty\ApiRickNMorty\obj\Debug\netstandard2.0\ApiRickNMorty.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kevin\source\repos\ApiRickNMorty\ApiRickNMorty\ApiRickNMorty\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Kevin\source\repos\ApiRickNMorty\ApiRickNMorty\ApiRickNMorty\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+C:\Users\Kevin\source\repos\ApiRickNMorty\ApiRickNMorty\ApiRickNMorty\obj\Debug\netstandard2.0\ApiRickNMorty.AssemblyInfoInputs.cache
+C:\Users\Kevin\source\repos\ApiRickNMorty\ApiRickNMorty\ApiRickNMorty\obj\Debug\netstandard2.0\ApiRickNMorty.AssemblyInfo.cs
+C:\Users\Kevin\source\repos\ApiRickNMorty\ApiRickNMorty\ApiRickNMorty\obj\Debug\netstandard2.0\ApiRickNMorty.csproj.CoreCompileInputs.cache
+C:\Users\Kevin\source\repos\ApiRickNMorty\ApiRickNMorty\ApiRickNMorty\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Kevin\source\repos\ApiRickNMorty\ApiRickNMorty\ApiRickNMorty\obj\Debug\netstandard2.0\ApiRickNMorty.dll
+C:\Users\Kevin\source\repos\ApiRickNMorty\ApiRickNMorty\ApiRickNMorty\obj\Debug\netstandard2.0\ApiRickNMorty.pdb
