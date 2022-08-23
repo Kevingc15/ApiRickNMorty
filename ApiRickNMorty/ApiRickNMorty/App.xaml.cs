@@ -1,4 +1,5 @@
 using ApiRickNMorty.Contracts;
+using ApiRickNMorty.Repositories;
 using ApiRickNMorty.Services;
 using ApiRickNMorty.ViewModels;
 using ApiRickNMorty.Views;
@@ -35,6 +36,8 @@ namespace ApiRickNMorty
             containerRegistry.Register<IJsonService, JsonService>();
             containerRegistry.Register<IHttpClientService, HttpClientService>();
             containerRegistry.Register<SettingsService>();
+            containerRegistry.Register<ICharacterRepository, CharactersRepository>();
+            containerRegistry.RegisterForNavigation<MainCharactersPage, MainCharactersPageViewModel>();
         }
     }
 }

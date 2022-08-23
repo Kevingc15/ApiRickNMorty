@@ -3,9 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ApiRickNMorty.Views.MainPage"
              Title="{Binding Title}">
-
-    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-        <Label Text="PRIMERA PAG" TextColor="White" />
+    <Grid>
+        <Image Source="https://www.previewsworld.com/SiteImage/MainImage/STL162047" Aspect="AspectFit"/>
+        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            <Button Text="CHARACTERS" Command="{Binding ContinuePageCommand}" BackgroundColor="Green"
+                    CornerRadius="10"
+                    VerticalOptions="Center"
+                    Font="Bold"
+                    FontSize="Body"
+                    TextColor="White"/>
     </StackLayout>
+    </Grid>
 
 </ContentPage>

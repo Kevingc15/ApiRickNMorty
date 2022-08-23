@@ -11,3 +11,4 @@ C:\Users\Kevin\source\repos\ApiRickNMorty\ApiRickNMorty\ApiRickNMorty\obj\Debug\
 C:\Users\Kevin\source\repos\ApiRickNMorty\ApiRickNMorty\ApiRickNMorty\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\Kevin\source\repos\ApiRickNMorty\ApiRickNMorty\ApiRickNMorty\obj\Debug\netstandard2.0\ApiRickNMorty.dll
 C:\Users\Kevin\source\repos\ApiRickNMorty\ApiRickNMorty\ApiRickNMorty\obj\Debug\netstandard2.0\ApiRickNMorty.pdb
+C:\Users\Kevin\source\repos\ApiRickNMorty\ApiRickNMorty\ApiRickNMorty\obj\Debug\netstandard2.0\Views\MainCharactersPage.xaml.g.cs
