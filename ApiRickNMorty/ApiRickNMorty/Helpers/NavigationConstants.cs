@@ -7,5 +7,6 @@ namespace ApiRickNMorty.Helpers
     public class NavigationConstants
     {
         public const string CharactersPage = "MainCharactersPage";
+        public const string SelectCharacterPage = "SelectCharacterPage";
     }
 }

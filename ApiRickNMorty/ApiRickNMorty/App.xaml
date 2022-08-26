@@ -3,10 +3,13 @@
              xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="http://prismlibrary.com"
+             xmlns:converters="clr-namespace:ApiRickNMorty.Converters"
              x:Class="ApiRickNMorty.App">
   <Application.Resources>
 
     <!-- Application resource dictionary -->
+        <converters:StatusToColorConverter
+          x:Key="StatusToColorConverter"/>
 
-  </Application.Resources>
+    </Application.Resources>
 </prism:PrismApplication>

@@ -10,5 +10,6 @@ namespace ApiRickNMorty.Contracts
     public interface ICharacterRepository
     {
         Task<List<Character>> GetCharacters();
+        Task<Character> GetCharacter(int id);
     }
 }

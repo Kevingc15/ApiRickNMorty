@@ -1,13 +1,102 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:prism="http://prismlibrary.com"
+             xmlns:prism="http://prismlibrary.com" 
+             xmlns:models="clr-namespace:ApiRickNMorty.Models"
+             xmlns:viewmodels="clr-namespace:ApiRickNMorty.ViewModels"
+             x:DataType="viewmodels:MainCharactersPageViewModel"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="ApiRickNMorty.Views.MainCharactersPage">
 
-    <Grid HorizontalOptions="Center"
-          VerticalOptions="Center">
-        <Label Text="Characters"></Label>
+    <Grid
+        RowDefinitions="*,auto"
+        RowSpacing="0"
+        BackgroundColor="#20232A">
+        <ListView
+            HasUnevenRows="True"
+            ItemsSource="{Binding Characters}">
+            <ListView.ItemTemplate>
+                <DataTemplate x:DataType="models:Character">
+                    <ViewCell>
+                        <Frame
+                            Margin="20"
+                            Padding="0"
+                            CornerRadius="12"
+                            BackgroundColor="#3D3E43">
+                            <Grid
+                                ColumnSpacing="15"
+                                ColumnDefinitions="*,auto">
+                                <Image
+                                    Source="{Binding Image}" 
+                                    Aspect="AspectFit">
+                                    <Image.GestureRecognizers>
+                                    <TapGestureRecognizer
+                                        Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:MainCharactersPageViewModel}}, Path=SelectedCharacterCommand}"
+                                        CommandParameter="{Binding}"/>
+                                    </Image.GestureRecognizers>
+                                </Image>
+                                <StackLayout
+                                    Padding="0,0,5,15"
+                                    Grid.Column="2">
+                                    <Label
+                                        Text="{Binding Name}"
+                                        FontAttributes="Bold"
+                                        FontSize="20"
+                                        TextColor="White" />
+                                    <StackLayout
+                                        Orientation="Horizontal">
+                                        <BoxView 
+                                            HeightRequest="8"
+                                            WidthRequest="8"
+                                            CornerRadius="4"
+                                            VerticalOptions="Center"
+                                            HorizontalOptions="Center"
+                                            Color="{Binding Converter={StaticResource StatusToColorConverter}}"/>
+                                        <Label
+                                            TextColor="White">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span
+                                                        Text="{Binding Status}" />
+                                                    <Span Text=" "></Span>
+                                                    <Span
+                                                        Text="{Binding Species}" />
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                    </StackLayout>
+                                    <Label
+                                        Text="Last know location:"
+                                        TextColor="#8C8A8D"/>
+                                    <Label
+                                        Text="{Binding Location.Name}"
+                                        TextColor="White" />
+                                    <Label
+                                        Margin="0,10,0,0"
+                                        Text="First seen in:"
+                                        TextColor="#8C8A8D" />
+                                    <Label
+                                        Text="{Binding Origin.Name}"
+                                        TextColor="White" />
+                                </StackLayout>
+                            </Grid>
+                        </Frame>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Grid
+            Padding="10,0,10,10"
+            ColumnDefinitions="*,*"
+            Grid.Row="1">
+            <Button 
+                Text="Atrás"
+                BackgroundColor="#F1F1F1"/>
+            <Button
+                Grid.Column="1"
+                Text="Adelante"
+                BackgroundColor="#C1C1C1" />
+        </Grid>
     </Grid>
     
 </ContentPage>

@@ -22,7 +22,7 @@ namespace ApiRickNMorty
         {
             InitializeComponent();
 
-            await NavigationService.NavigateAsync("NavigationPage/MainPage");
+            await NavigationService.NavigateAsync("NavigationPage/MainCharactersPage");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
@@ -38,6 +38,7 @@ namespace ApiRickNMorty
             containerRegistry.Register<SettingsService>();
             containerRegistry.Register<ICharacterRepository, CharactersRepository>();
             containerRegistry.RegisterForNavigation<MainCharactersPage, MainCharactersPageViewModel>();
+            containerRegistry.RegisterForNavigation<SelectCharacterPage, SelectCharacterPageViewModel>();
         }
     }
 }
