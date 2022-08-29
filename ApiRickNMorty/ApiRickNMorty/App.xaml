@@ -10,8 +10,6 @@
     <!-- Application resource dictionary -->
         <converters:StatusToColorConverter
           x:Key="StatusToColorConverter"/>
-        <converters:CharacterStatusConverter
-          x:Key="CharacterStatusConverter"/>
 
     </Application.Resources>
 </prism:PrismApplication>

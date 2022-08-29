@@ -63,7 +63,7 @@
                     Text="Origin" />
                 <Label
                     Grid.Column="1"
-                    Text="{Binding Character.Origin.Name}" />
+                    Text="{Binding Character.Origin.Name    }" />
             </Grid>
         </StackLayout>
     </Grid>
