@@ -13,7 +13,7 @@ namespace ApiRickNMorty.ViewModels
     public class SelectCharacterPageViewModel : ViewModelBase
     {
         ICharacterRepository characterRepository;
-        
+        private Character character;
 
         public SelectCharacterPageViewModel(INavigationService navigationService
             , ICharacterRepository characterRepository): base(navigationService)
@@ -21,7 +21,7 @@ namespace ApiRickNMorty.ViewModels
             this.characterRepository = characterRepository;
         }
 
-        public Character Character { get; set; }
+        public Character Character { get => character; set => SetProperty(ref character, value); }
 
         public async override void Initialize(INavigationParameters parameters)
         {

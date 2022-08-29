@@ -1,6 +1,4 @@
-﻿using ApiRickNMorty.Helpers;
-using ApiRickNMorty.Models;
-using ApiRickNMorty.Models.Enums;
+﻿using ApiRickNMorty.Models;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -9,18 +7,18 @@ using Xamarin.Forms;
 
 namespace ApiRickNMorty.Converters
 {
-    public class StatusToColorConverter : IValueConverter
+    internal class CharacterStatusConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            Character character = value as Character;
-            switch (character.Status)
+            string valor = value as string;
+            switch (valor)
             {
                 case "Alive": return Color.FromHex("33FF39");
                 case "Dead": return Color.FromHex("FE1919");
                 case "unknown": return Color.FromHex("E8FE14");
             }
-            
+
             return null;
         }
 

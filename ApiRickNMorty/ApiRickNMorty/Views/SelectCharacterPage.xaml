@@ -9,12 +9,11 @@
 
     <Grid
         Padding="30"
-        RowDefinitions="auto,*"
-        x:DataType="models:Character">
+        RowDefinitions="auto,*">
         <Image
-            Source="{Binding Image}"
-            Aspect="AspectFill" 
-            HeightRequest="400"/>
+            Source="{Binding Character.Image}"
+            Aspect="AspectFit" 
+            HeightRequest="200"/>
         <StackLayout
             Spacing="30"
             Grid.Row="1">
@@ -28,7 +27,7 @@
                     Text="Ubication"/>
                 <Label
                     Grid.Column="1"
-                    Text="{Binding Location.Name}" />
+                    Text="{Binding Character.Location.Name}" />
             </Grid>
             <Grid
                 Padding="50,0"
@@ -37,7 +36,7 @@
                     Text="Status" />
                 <Label
                     Grid.Column="1"
-                    Text="{Binding Status}" />
+                    Text="{Binding Character.Status}" />
             </Grid>
             <Grid
                 Padding="50,0"
@@ -46,7 +45,7 @@
                     Text="Specie" />
                 <Label
                     Grid.Column="1"
-                    Text="{Binding Species}" />
+                    Text="{Binding Character.Species}" />
             </Grid>
             <Grid
                 Padding="50,0"
@@ -55,7 +54,16 @@
                     Text="Genre" />
                 <Label
                     Grid.Column="1"
-                    Text="{Binding Gender}" />
+                    Text="{Binding Character.Gender}" />
+            </Grid>
+            <Grid
+                Padding="50,0"
+                ColumnDefinitions="*,Auto">
+                <Label
+                    Text="Origin" />
+                <Label
+                    Grid.Column="1"
+                    Text="{Binding Character.Origin.Name}" />
             </Grid>
         </StackLayout>
     </Grid>
